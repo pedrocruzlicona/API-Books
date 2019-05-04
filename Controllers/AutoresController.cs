@@ -4,10 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace APIBooks.Controllers
 {
     [ApiController]
-    public class AutorController:ControllerBase
+    [Route("api/[controller]")]
+    public class AutoresController:ControllerBase
     {
-        public AutorController()
-        {
-        }
+
     }
 }
