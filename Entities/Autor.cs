@@ -1,10 +1,12 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace APIBooks.Entities
 {
     public class Autor
     {
-        public Autor()
-        {
-        }
+        [Key]
+        public int Id { get; set; }
+        public int Nombre { get; set; }
     }
 }
