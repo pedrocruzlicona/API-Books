@@ -1,10 +1,16 @@
 ﻿using System;
+using APIBooks.Entities;
+using Microsoft.EntityFrameworkCore;
+
 namespace APIBooks.Contexts
 {
-    public class ApplicationDbContext
+    public class ApplicationDbContext:DbContext
     {
-        public ApplicationDbContext()
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options ):base(options)
         {
+
         }
+        //crea la tabla Autores
+        public DbSet<Autor> Autores { get; set; }
     }
 }
