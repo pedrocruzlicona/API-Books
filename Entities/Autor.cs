@@ -7,6 +7,7 @@ namespace APIBooks.Entities
     {
         [Key]
         public int Id { get; set; }
-        public int Nombre { get; set; }
+        [Required]
+        public string  Nombre { get; set; }
     }
 }
