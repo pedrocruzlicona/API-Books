@@ -25,7 +25,7 @@ namespace APIBooks.Controllers
             return context.Autores.ToList();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}",Name ="autorNavigate")]
         public ActionResult<Autor> Get(int id)
         {
             var autor = context.Autores.FirstOrDefault(x => x.Id == id);
@@ -35,6 +35,15 @@ namespace APIBooks.Controllers
             }
 
             return autor;
+        }
+
+        [HttpPost]
+        public ActionResult Post([FromBody]Autor autor)
+        {
+            //int id;
+            context.Autores.Add(autor);
+            context.SaveChanges();
+            return new CreatedAtRouteResult("autorNavigate", new { id = autor.Id } , autor);
         }
 
     }

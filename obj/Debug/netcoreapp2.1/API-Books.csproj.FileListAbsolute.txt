@@ -12,3 +12,17 @@
 /Users/pedro/Projects/API-Books/API-Books/obj/Debug/netcoreapp2.1/API-Books.RazorTargetAssemblyInfo.cache
 /Users/pedro/Projects/API-Books/API-Books/obj/Debug/netcoreapp2.1/API-Books.dll
 /Users/pedro/Projects/API-Books/API-Books/obj/Debug/netcoreapp2.1/API-Books.pdb
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/bin/Debug/netcoreapp2.1/API-Books.deps.json
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/bin/Debug/netcoreapp2.1/API-Books.runtimeconfig.json
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/bin/Debug/netcoreapp2.1/API-Books.runtimeconfig.dev.json
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/bin/Debug/netcoreapp2.1/API-Books.dll
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/bin/Debug/netcoreapp2.1/API-Books.pdb
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.csprojAssemblyReference.cache
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.csproj.CoreCompileInputs.cache
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.RazorAssemblyInfo.cache
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.RazorAssemblyInfo.cs
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.AssemblyInfoInputs.cache
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.AssemblyInfo.cs
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.RazorTargetAssemblyInfo.cache
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.dll
+/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/Debug/netcoreapp2.1/API-Books.pdb

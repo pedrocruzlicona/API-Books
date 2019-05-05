@@ -11800,11 +11800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pedro/Projects/API-Books/API-Books/API-Books.csproj",
+      "projectUniqueName": "/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/API-Books.csproj",
       "projectName": "API-Books",
-      "projectPath": "/Users/pedro/Projects/API-Books/API-Books/API-Books.csproj",
+      "projectPath": "/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/API-Books.csproj",
       "packagesPath": "/Users/pedro/.nuget/packages/",
-      "outputPath": "/Users/pedro/Projects/API-Books/API-Books/obj/",
+      "outputPath": "/Users/pedro/Documents/Dev/Udemy/AspNetCore/API-Books/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -24,7 +24,8 @@ namespace APIBooks.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Nombre");
+                    b.Property<string>("Nombre")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
