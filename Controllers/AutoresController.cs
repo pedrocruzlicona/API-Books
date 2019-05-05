@@ -46,5 +46,17 @@ namespace APIBooks.Controllers
             return new CreatedAtRouteResult("autorNavigate", new { id = autor.Id } , autor);
         }
 
+        [HttpPut("{id}")]
+        public ActionResult Put(int id,[FromBody] Autor autor)
+        {
+            if (id != autor.Id)
+            {
+                return BadRequest();
+            }
+
+            context.Entry(autor).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            context.SaveChanges();
+            return Ok();
+        }
     }
 }
