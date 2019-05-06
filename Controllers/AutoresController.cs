@@ -5,7 +5,7 @@ using System.Linq;
 using APIBooks.Contexts;
 using APIBooks.Entities;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.EntityFrameworkCore;
 namespace APIBooks.Controllers
 {
     [ApiController]
@@ -49,14 +49,28 @@ namespace APIBooks.Controllers
         [HttpPut("{id}")]
         public ActionResult Put(int id,[FromBody] Autor autor)
         {
+            //validamos para evitar que se cambie el id de un recurso
             if (id != autor.Id)
             {
                 return BadRequest();
             }
 
-            context.Entry(autor).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            context.Entry(autor).State = EntityState.Modified;
             context.SaveChanges();
             return Ok();
+        }
+        [HttpDelete("{id}")]
+        public ActionResult<Autor> Delete(int id)
+        {
+            var autor = context.Autores.FirstOrDefault(x=>x.Id==id);
+            if (autor==null)
+            {
+                return NotFound();
+            }
+            context.Autores.Remove(autor);
+            context.SaveChanges();
+
+            return autor;
         }
     }
 }

@@ -31,6 +31,32 @@ namespace APIBooks.Migrations
 
                     b.ToTable("Autores");
                 });
+
+            modelBuilder.Entity("APIBooks.Entities.Libro", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AutorId");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AutorId");
+
+                    b.ToTable("Libros");
+                });
+
+            modelBuilder.Entity("APIBooks.Entities.Libro", b =>
+                {
+                    b.HasOne("APIBooks.Entities.Autor", "Autor")
+                        .WithMany("Libros")
+                        .HasForeignKey("AutorId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
 #pragma warning restore 612, 618
         }
     }
