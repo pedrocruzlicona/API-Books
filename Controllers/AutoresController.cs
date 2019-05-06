@@ -25,6 +25,11 @@ namespace APIBooks.Controllers
             return context.Autores.Include(x=>x.Libros).ToList();
         }
 
+        [HttpGet("primer")]
+        public ActionResult<Autor> GetFirst()
+        {
+            return context.Autores.FirstOrDefault();
+        }
 
         [HttpGet("{id}",Name ="autorNavigate")]
         public ActionResult<Autor> Get(int id)
